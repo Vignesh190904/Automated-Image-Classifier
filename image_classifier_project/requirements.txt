@@ -1,0 +1,8 @@
+opencv-python
+pywavelets
+numpy
+scikit-learn
+matplotlib
+seaborn
+flask
+joblib
