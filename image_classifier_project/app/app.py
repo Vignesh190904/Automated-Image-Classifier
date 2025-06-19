@@ -7,29 +7,47 @@ import os
 
 app = Flask(__name__)
 
+# Paths
+BASE_PATH = BASE_PATH = os.path.dirname(os.path.dirname(__file__))
+CASCADE_PATH = os.path.join(BASE_PATH, 'opencv', 'haarcascades')
+HAAR_DIR = os.path.join(BASE_PATH, 'haarcascade')
+
 # Load trained model and class dictionary
-model = joblib.load('output/final_model.pkl')
-class_dict = joblib.load('output/class_dictionary.pkl')
+model = joblib.load(os.path.join(BASE_PATH, 'output/final_model.pkl'))
+class_dict = joblib.load(os.path.join(BASE_PATH, 'output/class_dictionary.pkl'))
 inv_class_dict = {v: k for k, v in class_dict.items()}
 
 # Load Haar cascades
-face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
-eye_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_eye.xml')
+face_cascade = cv2.CascadeClassifier(os.path.join(HAAR_DIR, 'haarcascade_frontalface_default.xml'))
+eye_cascade = cv2.CascadeClassifier(os.path.join(HAAR_DIR, 'haarcascade_eye.xml'))
+profile_cascade = cv2.CascadeClassifier(os.path.join(HAAR_DIR, 'haarcascade_profileface.xml'))
+nose_cascade = cv2.CascadeClassifier(os.path.join(HAAR_DIR, 'haarcascade_mcs_nose.xml'))
+mouth_cascade = cv2.CascadeClassifier(os.path.join(HAAR_DIR, 'haarcascade_mcs_mouth.xml'))
 
-def get_cropped_face_if_2_eyes(img):
+def get_cropped_face_if_valid(img):
     gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+
+    # Try frontal face first
     faces = face_cascade.detectMultiScale(gray, 1.3, 5)
+    if len(faces) == 0:
+        # Fallback to profile
+        faces = profile_face_cascade.detectMultiScale(gray, 1.3, 5)
+
     for (x, y, w, h) in faces:
         roi_gray = gray[y:y + h, x:x + w]
         roi_color = img[y:y + h, x:x + w]
+
         eyes = eye_cascade.detectMultiScale(roi_gray)
-        if len(eyes) >= 2:
+        nose = nose_cascade.detectMultiScale(roi_gray)
+        mouth = mouth_cascade.detectMultiScale(roi_gray)
+
+        if len(eyes) >= 2 and (len(nose) >= 1 or len(mouth) >= 1):
             return roi_color
     return None
 
 def wavelet_transform(img, mode='haar', level=1):
     img_gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
-    img_gray = np.float32(img_gray) / 255.0
+    img_gray = np.float32(img_gray) / 255.0 
     coeffs = pywt.wavedec2(img_gray, mode, level=level)
     coeffs_H = list(coeffs)
     coeffs_H[0] *= 0
@@ -39,8 +57,9 @@ def wavelet_transform(img, mode='haar', level=1):
     return img_reconstructed
 
 def extract_features(img):
-    cropped_face = get_cropped_face_if_2_eyes(img)
+    cropped_face = get_cropped_face_if_valid(img)
     if cropped_face is None:
+        print("❌ No valid face detected with required features.")
         return None
     cropped_face = cv2.resize(cropped_face, (32, 32))
     img_har = wavelet_transform(cropped_face, 'db1', 5)
@@ -55,29 +74,34 @@ def index():
 @app.route('/predict', methods=['POST'])
 def predict():
     if 'file' not in request.files:
-        return jsonify({'error': 'No file part'}), 400
+        return jsonify({'status': 'fail', 'message': 'No file part'}), 400
 
     file = request.files['file']
     if file.filename == '':
-        return jsonify({'error': 'No selected file'}), 400
+        return jsonify({'status': 'fail', 'message': 'No selected file'}), 400
 
-    # Read the image
     img = cv2.imdecode(np.frombuffer(file.read(), np.uint8), cv2.IMREAD_COLOR)
     if img is None:
-        return jsonify({'error': 'Could not read image'}), 400
-    
-    # Extract features from the image
+        return jsonify({'status': 'fail', 'message': 'Could not read image'}), 400
+
     features = extract_features(img)
     if features is None:
-        return jsonify({'error': 'No face with 2 eyes detected'}), 400
+        return jsonify({'status': 'fail', 'message': "Person/Celebrity can't be classified"}), 200
 
-    # Make prediction
     prediction = model.predict([features])[0]
     proba = model.predict_proba([features])[0]
     predicted_class = inv_class_dict[prediction]
+    confidence = proba[prediction]  # get confidence of top class
 
-    # Prepare the response
+    # Apply confidence threshold (e.g., 0.9 for 90%)
+    if confidence < 0.80:
+        return jsonify({
+            'status': 'fail',
+            'message': "The model is not confident enough to classify this person."
+        }), 200
+
     result = {
+        'status': 'success',
         'predicted_class': predicted_class,
         'class_probabilities': {inv_class_dict[i]: prob for i, prob in enumerate(proba)}
     }

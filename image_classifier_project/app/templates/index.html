@@ -2,199 +2,57 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Celebrity Classifier</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.9.3/min/dropzone.min.css">
-  <style>
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #069ea3;
-    }
-
-    h1 {
-      text-align: center;
-      padding: 20px 0;
-      color: #333;
-    }
-
-    #member-gallery {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      margin-bottom: 20px;
-    }
-
-    .member {
-      margin: 10px 15px;
-      text-align: center;
-    }
-
-    .member img {
-      width: 100px;
-      height: 100px;
-      border-radius: 50%;
-      border: 3px solid transparent;
-      transition: all 0.3s ease;
-    }
-
-    .member img.highlighted {
-      border: 4px solid #4CAF50 !important;
-      padding: 2px;
-    }
-
-    .container {
-      display: flex;
-      justify-content: center;
-      padding: 20px;
-      gap: 40px;
-    }
-
-    .left, .right {
-      background-color: #ffffff;
-      border-radius: 10px;
-      padding: 20px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-      width: 400px;
-      min-height: 360px;
-    }
-
-    .dropzone {
-      border: 2px dashed #4CAF50;
-      border-radius: 10px;
-      background-color: #f9f9f9;
-      line-height: 150px;
-      color: #4CAF50;
-      font-size: 16px;
-    }
-
-    #buttons {
-      text-align: center;
-      margin-top: 20px;
-    }
-
-    #refresh-btn, #classify-btn {
-      padding: 10px 20px;
-      margin: 0 10px;
-      background-color: #4CAF50;
-      color: white;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-
-    #refresh-btn {
-      background-color: #f44336;
-    }
-
-    #result {
-      display: none;
-    }
-
-    .progress-bar-container {
-      background-color: #e0e0e0;
-      border-radius: 20px;
-      margin-bottom: 10px;
-      height: 24px;
-      overflow: hidden;
-    }
-
-    .progress-bar {
-      background-color: #4CAF50;
-      height: 100%;
-      line-height: 24px;
-      color: white;
-      text-align: center;
-      white-space: nowrap;
-      transition: width 0.4s ease;
-    }
-  </style>
+  <title>Automated Image Classification System</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.9.3/min/dropzone.min.js"></script>
 </head>
 <body>
-  <h1>Celebrity Classifier</h1>
-
-  <!-- Top member gallery -->
-  <div id="member-gallery">
+  <h1>Automated Image Classification System</h1>
+  <!-- Sample Images -->
+  <div class="sample-images">
     <div class="member"><img src="/static/members/lionel_messi.png" alt="Lionel Messi"><p>Lionel Messi</p></div>
     <div class="member"><img src="/static/members/maria_sharapova.jpg" alt="Maria Sharapova"><p>Maria Sharapova</p></div>
     <div class="member"><img src="/static/members/roger_federer.jfif" alt="Roger Federer"><p>Roger Federer</p></div>
     <div class="member"><img src="/static/members/serena_williams.jpg" alt="Serena Williams"><p>Serena Williams</p></div>
     <div class="member"><img src="/static/members/virat_kohli.jpg" alt="Virat Kohli"><p>Virat Kohli</p></div>
   </div>
+  <div id="error-message" style="color: red; font-weight: bold; margin-top: 10px; display: none;"></div>
+  <!-- Loader Spinner -->
+  <div id="loader" style="display: none; text-align: center; margin: 20px;">
+    <div class="spinner"></div>
+  </div>
 
-  <!-- Main content layout -->
-  <div class="container">
+  <!-- Error Message -->
+  <div id="error-message" class="fade" style="display: none; color: red; font-weight: bold; margin-top: 10px;"></div>
+
+  <div class="main-container">
+    <!-- Dropzone Left -->
     <div class="left">
-      <form action="/predict" class="dropzone" id="dropzoneForm"></form>
-      <div id="buttons">
-        <button id="refresh-btn" onclick="refreshPage()">Refresh</button>
+      <form action="/predict" class="dropzone" id="dropzoneForm">
+        <div class="dz-default dz-message">
+          <svg class="upload-icon" xmlns="http://www.w3.org/2000/svg" fill="#00bcd4" viewBox="0 0 24 24" width="64" height="64">
+            <path d="M19 15v4H5v-4H3v4c0 1.103.897 2 2 2h14a2 2 0 0 0 2-2v-4h-2zm-7-1l5-5h-3V4h-4v5H6l5 5z"/>
+          </svg>
+        </div>
+      </form>
+      <div class="btns">
         <button id="classify-btn">Classify</button>
       </div>
     </div>
-
-    <div class="right" id="result">
-      <h3>Prediction Result</h3>
-      <p><strong>Predicted Class:</strong> <span id="predicted-class">-</span></p>
-      <h4>Class Probabilities:</h4>
-      <div id="probabilities"></div>
+    <!-- Results and Image Grid Right -->
+    <div class="right">
+      <div id="classified-image" class="grid-image"></div>
+      <div id="result"></div>
     </div>
   </div>
+  <script src="{{ url_for('static', filename='app.js') }}"></script>
+  <!-- Loader Overlay -->
+  <div id="loader-overlay" style="display: none;">
+    <div class="loader-spinner"></div>
+  </div>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.9.3/min/dropzone.min.js"></script>
-  <script>
-    Dropzone.autoDiscover = false;
+  <!-- Toast Notification -->
+  <div id="toast" class="toast" style="display: none;"></div>
 
-    const dropzone = new Dropzone("#dropzoneForm", {
-      url: "/predict",
-      paramName: "file",
-      maxFiles: 1,
-      acceptedFiles: ".jpg,.jpeg,.png",
-      autoProcessQueue: false,
-    });
-
-    document.getElementById('classify-btn').addEventListener('click', function (e) {
-      e.preventDefault();
-      if (dropzone.files.length > 0) {
-        dropzone.processQueue();
-      } else {
-        alert("Please upload an image first.");
-      }
-    });
-
-    function refreshPage() {
-      location.reload();
-    }
-
-    dropzone.on("success", function (file, response) {
-      document.getElementById('result').style.display = 'block';
-      document.getElementById('predicted-class').innerText = response.predicted_class;
-
-      let probHTML = '';
-      for (const [label, prob] of Object.entries(response.class_probabilities)) {
-        const percent = (prob * 100).toFixed(2);
-        probHTML += `
-          <div>
-            <strong>${label}</strong>
-            <div class="progress-bar-container">
-              <div class="progress-bar" style="width: ${percent}%;">${percent}%</div>
-            </div>
-          </div>
-        `;
-      }
-      document.getElementById('probabilities').innerHTML = probHTML;
-
-      // Highlight matching member image
-      document.querySelectorAll('.member img').forEach(img => {
-        img.classList.remove('highlighted');
-        if (img.alt.toLowerCase().trim() === response.predicted_class.toLowerCase().trim()) {
-          img.classList.add('highlighted');
-        }
-      });
-    });
-
-    dropzone.on("error", function (file, errorMessage) {
-      alert("Prediction failed. Try again.");
-    });
-  </script>
 </body>
 </html>

@@ -1,0 +1,700 @@
+Folder PATH listing for volume Windows
+Volume serial number is 66A3-C284
+C:.
+|   folder_structure.txt
+|   requirements.txt
+|   
++---app
+|   |   app.py
+|   |   
+|   +---static
+|   |   |   app.js
+|   |   |   style.css
+|   |   |   
+|   |   \---members
+|   |           lionel_messi.png
+|   |           maria_sharapova.jpg
+|   |           roger_federer.jfif
+|   |           serena_williams.jpg
+|   |           virat_kohli.jpg
+|   |           
+|   \---templates
+|           index.html
+|           
++---data
+|   +---cleaned
+|   |   +---lionel_messi
+|   |   |       02453493f852c0efe8ff951dea5845c4.jpg
+|   |   |       1211643746.jpg.0.jpg
+|   |   |       136054219.jpg.0.jpg
+|   |   |       190703-lionel-messi.jpg
+|   |   |       20190804-The18-Image-Lionel-Messi-Speech-Camp-Nou-2019-1280x720.jpg
+|   |   |       28003-1510231943.jpg
+|   |   |       28410198-8321609-image-a-96_1589497931974.jpg
+|   |   |       5cb62e40230000c2006db3ac.jpg
+|   |   |       5de5fed30f25441e5823254c.jpg
+|   |   |       5e4bac9b3b62b77617608663.jfif
+|   |   |       636654404591000000-GTY-980548622.jpg
+|   |   |       7488bab50fd9441a43359ec299a8dad2.jpg
+|   |   |       838788-lionel-messi-pti.jpg
+|   |   |       85054-messi12.jfif
+|   |   |       8e28dca199d2c529e710f2fc7550fc85.jpg
+|   |   |       960.jpg
+|   |   |       a8784d8ea286c3fbfef21201af1c1254.jpg
+|   |   |       avatar-leomessi.png
+|   |   |       crop.jfif
+|   |   |       DdaglCTVQAEtWO4.jpg
+|   |   |       de1e3ba2246c28ebc55bb01c9a0618e7.jpg
+|   |   |       GettyImages-921766552_compress55.jpg
+|   |   |       IMG_20200131_151915.jpg
+|   |   |       lionel-messi-1583899230.jpg
+|   |   |       lionel-messi-argentina-nigeria-world-cup-russi-2018-26062018_93x42eje651jz426mmy39451.jpg
+|   |   |       lionel-messi-barcelona_s4mt4mvtjyy41gz5noeslzqjt.jpg
+|   |   |       Lionel-Messi-GettyImages-1160437265.jpg
+|   |   |       lionel-messi-in-november-2005_kmvg03y9e7621774f558bqqnl.jpg
+|   |   |       lionel-messi-net-worth-1.jpg
+|   |   |       Lionel.Messi_.webp
+|   |   |       maxresdefault.jpg
+|   |   |       messi-940x529.jpg
+|   |   |       MESSI-On-Field-6-4340-8x10.jpg
+|   |   |       mini_Messi-celebraci-gol.jpg
+|   |   |       MW-GZ677_messi__20181204153948_ZQ.jpg
+|   |   |       NINTCHDBPICT000517147454.jpg
+|   |   |       PA-43961167.jpg
+|   |   |       wct4vk5iipilmbxx_1589950679.jpeg
+|   |   |       _111066400_messi.jpg
+|   |   |       
+|   |   +---maria_sharapova
+|   |   |       001aa018f83f14d5a9cd30.jpg
+|   |   |       002831aab808e5488d75de92ec4fb939.jpg
+|   |   |       104680979-GettyImages-466647961.jpg
+|   |   |       1368843.jpg
+|   |   |       166-1666011_maria-sharapova-wallpaper-hd-tennis-maria-sharapova-4k.jpg
+|   |   |       183821-Maria_Sharapova-blonde-women-athletes-smiling-748x997.jpg
+|   |   |       184-1847379_download-maria-sharapova-wallpaper-2013-wallpaper-hd-full.jpg
+|   |   |       2015070814363485712044768374.jpg
+|   |   |       22620-alexander-gilkes-maria-sharapova.jpg
+|   |   |       26ED6CF600000578-3008031-image-a-105_1427131595123.jpg
+|   |   |       6d409ff04b719c7822905a0198a8218b.jpg
+|   |   |       817a5860-8f61-11ea-adf5-c0bb526a31e7.jpg
+|   |   |       8680c4164dff384da765d34de8744fba.jpg
+|   |   |       89315xcitefun-maria-sharapova-002.jpg
+|   |   |       95349717081091468_hv3jryev_f.jpg
+|   |   |       article-2729950-20AA1F5F00000578-936_634x949.jpg
+|   |   |       d90560477a89f8e9670a3a5e092ba8dd.jpg
+|   |   |       maria-sharapova-2013-beautiful_1920x1200_99155.jpg
+|   |   |       maria-sharapova-green-eyes-tennis-player-face.jpg
+|   |   |       maria-sharapova-praises-roger-federer-for-his-offcourt-life.jpg
+|   |   |       maria-sharapova-tim-ferriss-interview_s.webp
+|   |   |       Maria-Sharapova-women-singles-event-US-Open-2006.jpg
+|   |   |       maria-sharapova-won-wimbledon-as-a-17-year-AFP_1PC6YI-2.jpg
+|   |   |       Maria_Sharapova_women-169589.jpg
+|   |   |       monochrome-maria-sharapova-face-wallpaper-65016-67225-hd-wallpapers.jpg
+|   |   |       OD-BG400_20ODDa_8V_20150520191535.jpg
+|   |   |       Pretty-Maria-Sharapova-4-SW4155.jpg
+|   |   |       Pretty-Maria-Sharapova-44-SW4156.jpg
+|   |   |       pretty-maria-sharapova-visits-nike-head-quarters-and-porsche-opening-pics-and-video-inside.jpg
+|   |   |       sharapova-84bc97653a7b49b73fcb4919fec16a31aff3b806-s800-c85.jpg
+|   |   |       sharapova-hits-the-practice-courts-and-met-ball-kids.jpg
+|   |   |       skysports-maria-sharapova-tennis_4886283-1280x720-1.jpg
+|   |   |       thumb-1920-37667.jpg
+|   |   |       unnamed.jpg
+|   |   |       wp1853660.jpg
+|   |   |       
+|   |   +---roger_federer
+|   |   |       03775a8e131301d9b53406c8f40fb10b.webp
+|   |   |       07548250.jpg
+|   |   |       1163381732-850x560.webp
+|   |   |       55d4aba6a570417280c790d119c91ee7_18.jpg
+|   |   |       5c6becd02628985d2a2ee2a2.jfif
+|   |   |       643791-641790-roger-federer-aus-open-2018-afp.jpg
+|   |   |       833491-jzwrfgakxz-1491130217.jpg
+|   |   |       88m_ilrAGFA.jpg
+|   |   |       901027-715352-692111-661354-roger-federer-indian-wells-2018-afp-2.jpg
+|   |   |       download.jfif
+|   |   |       Federer-US-Open-847483.jpg
+|   |   |       federer-_660_073012091350.jpg
+|   |   |       federerkohli-770x433.webp
+|   |   |       Federer_640 (1).jpg
+|   |   |       Federer_640.jpg
+|   |   |       federer_m.jpg
+|   |   |       gettyimages-1089315298 (1).jpg
+|   |   |       gettyimages-1089315298.jpg
+|   |   |       GettyImages-1151444330.jpg
+|   |   |       how-roger-federer-rafael-nadal-and-novak-djokovic-changed-tennis-history-like-no-other.jpg
+|   |   |       NINTCHDBPICT000561000009-e1582196702724-1-1600x1412.jpg
+|   |   |       pr2rudso_roger-federer-afp_625x300_20_January_20.webp
+|   |   |       Roger-Federer (1).jpg
+|   |   |       roger-federer-answers-questions-during-a-press-conference-ahead-of-the-australian-open-2018-ap-1515940642.jpg
+|   |   |       Roger-Federer-Full-Press-conference-after-S-Finals-loss.jpg
+|   |   |       roger-federer-s-daughters-myla-rose-and-charlene-riva-turn-9.jpg
+|   |   |       Roger-Federer-wife-Mirka-Federer-1009792-1280x720.jpg
+|   |   |       Roger-Federer.webp
+|   |   |       shPDTYko91c.jpg
+|   |   |       sp27-Roger-Federer.jpg
+|   |   |       
+|   |   +---serena_williams
+|   |   |       00-story-image-serena-and-alexis-wedding.jpg
+|   |   |       04-serena-williams-vogue-cover-february-2018.jpg
+|   |   |       09Hunter1-superJumbo.jpg
+|   |   |       0ae47ed53dc47509d3f1d68b5a36a0c2.jpg
+|   |   |       104896644-GettyImages-823360.jpg
+|   |   |       14339074209247.jpg
+|   |   |       577ff77cdd0895a01f8b4c75.jfif
+|   |   |       5e187cc2b2e66a44187ad008.jfif
+|   |   |       766c6664236f443c9c014cb2cbf9af7c_18.jpg
+|   |   |       a116634280a52f49d1882850332ea348.jpg
+|   |   |       ap_serena1.jpg
+|   |   |       b47a15e872fd97677ece0952f97a952a.jpg
+|   |   |       beautiful-serena-williams-smile-face-hd-mobile-desktop-background-free-wallpaper.jpg
+|   |   |       c4fb97d5e53a45d5077691e738ad2559.jfif
+|   |   |       ca4f0064d6a8862fa90fa029b150f103.jpg
+|   |   |       dedeeb4268d54d1675933ff939740907.jpg
+|   |   |       GettyImages-546039732.jpg
+|   |   |       iggy-azalea-serena-williams-that-grape-juice-2016-1191010.png
+|   |   |       image.jfif
+|   |   |       images.jfif
+|   |   |       merlin_159161442_12e2102e-bd10-43d0-9b10-57d0dc248805-superJumbo.jpg
+|   |   |       nrm_1416399535-serena-berlei-2.jpg
+|   |   |       phyeer11c02qbwe.jpg
+|   |   |       pri_69579085-e1518865160694.jpg
+|   |   |       serena-usa-m.jpg
+|   |   |       serena-venus-williams-redcarpet-gty-ps-181116_hpMain_16x9t_1600.jpg
+|   |   |       serena-williams-alexis-ohanian-feat.jpg
+|   |   |       serena-williams-glamour-july-2016-cover-1.jpg
+|   |   |       serena-williams-glamour-july-2016-cover-4-social.jpg
+|   |   |       Serena-Williams-t.jpg
+|   |   |       Serena-Williams-Writes-a-Beautiful-Letter-to-Her-Mom.jpg
+|   |   |       serena-williams1.jpg
+|   |   |       tmp_iILGT7_2f290cf6f8496dc0_GettyImages-676049730.jpg
+|   |   |       uUa6x3eXf3__zFaIfjkC0QysTGUwuhWOWoYEAUTunGv70HZ-UXA62U0sGCPucHm4pqxqPQWinZiXVNLmZFcZ6RF9aL8cZ5_kZGD0kziwbD16kWk1WWK5e39OyAPwaHjIzGqtAshq-1920x1080.png
+|   |   |       Williams-SerenaKN.jpg
+|   |   |       
+|   |   \---virat_kohli
+|   |           0b43460429.jpg
+|   |           0eb2230fbf.jpg
+|   |           150fc612d2.jpg
+|   |           1fee075645.jpg
+|   |           2c06edccfb.jpg
+|   |           357f957b72.jpg
+|   |           37d3f53e84.jpg
+|   |           3846bffc28.jpg
+|   |           47f53ee402.jpg
+|   |           5181ba2b71.jpg
+|   |           52345a338c.jpg
+|   |           55620911db.jpg
+|   |           59a89ee258.jpg
+|   |           5a3384f779.jpg
+|   |           6ca67cbf33.jpg
+|   |           76a06a6ec1.jpg
+|   |           7953108375.jpg
+|   |           7e224dbc5c.jpg
+|   |           80b6d56dca.jpg
+|   |           83f9de72c1.jpg
+|   |           84b8ff940f.jpg
+|   |           84d7142d38.jpg
+|   |           85420dacb0.jpg
+|   |           95f4fc9fdd.jpg
+|   |           9e30af3e8d.jpg
+|   |           a18f264208.jpg
+|   |           a410364f02.jpg
+|   |           a45a1e7929.jpg
+|   |           a76fdd6705.jpg
+|   |           aa9aff20c8.jpg
+|   |           b2f20fd674.jpg
+|   |           bb41267a29.jpg
+|   |           bf7a379edb.jpg
+|   |           ca4ace6ffd.jpg
+|   |           cae47439c4.jpg
+|   |           cbb752d148.jpg
+|   |           ce8509c4a3.jpg
+|   |           d3b3c15c31.jpg
+|   |           e158b6a853.jpg
+|   |           e309859808.jpg
+|   |           ea43ba6899.jpg
+|   |           ee9b8b6b6b.jpg
+|   |           eede89a24b.jpg
+|   |           f70491a4c2.jpg
+|   |           f8d44f8840.jpg
+|   |           fa92cc3cd5.jpg
+|   |           fc75b07003.jpg
+|   |           kohli1.jpg
+|   |           
+|   \---raw
+|       +---lionel_messi
+|       |       02453493f852c0efe8ff951dea5845c4.jpg
+|       |       10_MESSI_JUGADORS-WEB.jpg
+|       |       1211643746.jpg.0.jpg
+|       |       136054219.jpg.0.jpg
+|       |       190703-lionel-messi.jpg
+|       |       20190804-The18-Image-Lionel-Messi-Speech-Camp-Nou-2019-1280x720.jpg
+|       |       26622.jpg
+|       |       27243622-0-image-m-13_1586991155251.jpg
+|       |       28003-1510231943.jpg
+|       |       28410198-8321609-image-a-96_1589497931974.jpg
+|       |       5bd946a6cdbadfc416e59db42422c06c.jpg
+|       |       5cb62e40230000c2006db3ac.jpg
+|       |       5de5fed30f25441e5823254c.jpg
+|       |       5e4bac9b3b62b77617608663.jfif
+|       |       636654404591000000-GTY-980548622.jpg
+|       |       7488bab50fd9441a43359ec299a8dad2.jpg
+|       |       838788-lionel-messi-pti.jpg
+|       |       85054-messi12.jfif
+|       |       8e28dca199d2c529e710f2fc7550fc85.jpg
+|       |       960.jpg
+|       |       a70652xy3tnbtsa7_1582098259.jpeg
+|       |       a8784d8ea286c3fbfef21201af1c1254.jpg
+|       |       avatar-leomessi.png
+|       |       bf7680a40cc24597a645b97fb80307ad500x500@2x.jpg
+|       |       crop.jfif
+|       |       DdaglCTVQAEtWO4.jpg
+|       |       de1e3ba2246c28ebc55bb01c9a0618e7.jpg
+|       |       download.jfif
+|       |       forbes-highest-paid-athletes-2019-00.jpg
+|       |       GettyImages-921766552_compress55.jpg
+|       |       hi-res-dd0ead86aa219346a8cc94c50c8a458d_crop_north.jpg
+|       |       https___wp-images.onefootball.com_wp-content_uploads_sites_10_2020_01_FC-Barcelona-v-RCD-Mallorca-La-Liga-1579183256.jpg
+|       |       images.jfif
+|       |       IMG_20200131_151915.jpg
+|       |       lionel-messi-1583899230.jpg
+|       |       lionel-messi-555732-1-402.jpg
+|       |       lionel-messi-argentina-nigeria-world-cup-russi-2018-26062018_93x42eje651jz426mmy39451.jpg
+|       |       lionel-messi-barcelona_s4mt4mvtjyy41gz5noeslzqjt.jpg
+|       |       Lionel-Messi-GettyImages-1160437265.jpg
+|       |       lionel-messi-in-november-2005_kmvg03y9e7621774f558bqqnl.jpg
+|       |       lionel-messi-net-worth-1.jpg
+|       |       Lionel-Messi-of-FC-Barcelona.jpg
+|       |       lionel-messi.jpg
+|       |       Lionel.Messi_.webp
+|       |       lionelmessi-cropped_1fa41kpn63pr81p55kcpiaiusr.jpg
+|       |       Lionel_Messi_20180626 (1).jpg
+|       |       Lionel_Messi_20180626.jpg
+|       |       maxresdefault.jpg
+|       |       messi-940x529.jpg
+|       |       MESSI-On-Field-6-4340-8x10.jpg
+|       |       mini_Messi-celebraci-gol.jpg
+|       |       MW-GZ677_messi__20181204153948_ZQ.jpg
+|       |       NINTCHDBPICT000517147454.jpg
+|       |       PA-43961167.jpg
+|       |       r370950_1600x800cc.jpg
+|       |       skysports-messi-lionel-barcelona_5006546.jpg
+|       |       wct4vk5iipilmbxx_1589950679.jpeg
+|       |       _111066400_messi.jpg
+|       |       
+|       +---maria_sharapova
+|       |       001aa018f83f14d5a9cd30.jpg
+|       |       002831aab808e5488d75de92ec4fb939.jpg
+|       |       104680979-GettyImages-466647961.jpg
+|       |       12009b578d60268f36fcd7f2dcf7a04d.jpg
+|       |       1368843.jpg
+|       |       166-1666011_maria-sharapova-wallpaper-hd-tennis-maria-sharapova-4k.jpg
+|       |       183821-Maria_Sharapova-blonde-women-athletes-smiling-748x997.jpg
+|       |       184-1847379_download-maria-sharapova-wallpaper-2013-wallpaper-hd-full.jpg
+|       |       19102426-7520279-image-m-60_1569839081937.jpg
+|       |       2-70.jpg
+|       |       2015070814363485712044768374.jpg
+|       |       22620-alexander-gilkes-maria-sharapova.jpg
+|       |       26ED6CF600000578-3008031-image-a-105_1427131595123.jpg
+|       |       2900.jpg
+|       |       3-681.jpg
+|       |       36d4eca9-ab64-4f9f-bc82-5568ab9742ec-sharapova.jpg
+|       |       3FB3C05D00000578-4455850-Maria_Sharapova_has_moved_to_within_one_victory_of_guaranteeing_-a-57_1493413252955.jpg
+|       |       412eae9cac911235a67a77a59d24ef23.jpg
+|       |       6d409ff04b719c7822905a0198a8218b.jpg
+|       |       817a5860-8f61-11ea-adf5-c0bb526a31e7.jpg
+|       |       8680c4164dff384da765d34de8744fba.jpg
+|       |       89315xcitefun-maria-sharapova-002.jpg
+|       |       95349717081091468_hv3jryev_f.jpg
+|       |       a58dbc0e8684bc6de819f386d35d8240.jpg
+|       |       article-2729950-20AA1F5F00000578-936_634x949.jpg
+|       |       articles116-275.jpg
+|       |       beautiful-maria-sharapova-face-wallpaper.jpg
+|       |       d90560477a89f8e9670a3a5e092ba8dd.jpg
+|       |       db3fjrm-11a8defb-6e38-4dd5-9839-9f831ddda4a6.jpg
+|       |       DmWCxE.jpg
+|       |       f57779ccfc45909b9573d00a519e9a97.jpg
+|       |       gettyimages-90174893-e1435455524320.jpg
+|       |       GettyImages-905403138.jpg
+|       |       Grigor-Dimitrov-with-Mario-Sharapova-1-1280x720.jpg
+|       |       images.jfif
+|       |       Maria+Sharapova+Stella+Dinner+Party+8H6ZkYAupFOl.jpg
+|       |       maria-sharapova (1).jpg
+|       |       maria-sharapova-2013-beautiful_1920x1200_99155.jpg
+|       |       maria-sharapova-australian-open.jpg
+|       |       maria-sharapova-green-eyes-tennis-player-face.jpg
+|       |       maria-sharapova-is-said-to-have-a-new-old-coach-here-is-who.jpg
+|       |       maria-sharapova-out-in-new-york-september-11-2016_2.jpg
+|       |       maria-sharapova-praises-roger-federer-for-his-offcourt-life.jpg
+|       |       maria-sharapova-receives-marriage-proposal.jpg
+|       |       maria-sharapova-reveals-the-toughest-thing-about-life-as-a-tennis-player.jpg
+|       |       maria-sharapova-sexy-pics-2.jpg
+|       |       maria-sharapova-shopping-at-bristol-farms-in-los-angeles-06-30-2017_6.jpg
+|       |       maria-sharapova-steps-out-for-a-walk-with-new-boyfriend-alexander-gilkes-in-fulham-uk-191018_1.jpg
+|       |       maria-sharapova-steps-out-for-a-walk-with-new-boyfriend-alexander-gilkes-in-fulham-uk-191018_8.jpg
+|       |       maria-sharapova-tim-ferriss-interview_s.webp
+|       |       Maria-Sharapova-women-singles-event-US-Open-2006.jpg
+|       |       maria-sharapova-won-wimbledon-as-a-17-year-AFP_1PC6YI-2.jpg
+|       |       Maria-Sharapova.jpg
+|       |       MariaS-W1200.jpg.gallery.jpg
+|       |       mariasharapova-6-272x432.jpg
+|       |       Maria_Sharapova_women-169589.jpg
+|       |       Memoir.jpeg
+|       |       monochrome-maria-sharapova-face-wallpaper-65016-67225-hd-wallpapers.jpg
+|       |       NINTCHDBPICT000555871244-e1579584387360.jpg
+|       |       OD-BG400_20ODDa_8V_20150520191535.jpg
+|       |       pennetta-women-s-tennis-lacks-a-superstar-after-serena-williams-amp-maria-sharapova.jpg
+|       |       png-transparent-maria-sharapova-tennis-maria-sharapova-sport-girl-desktop-wallpaper.png
+|       |       PNGPIX-COM-Maria-Sharapova-PNG-Transparent-Image.png
+|       |       Pretty-Maria-Sharapova-4-SW4155.jpg
+|       |       Pretty-Maria-Sharapova-44-SW4156.jpg
+|       |       pretty-maria-sharapova-visits-nike-head-quarters-and-porsche-opening-pics-and-video-inside.jpg
+|       |       sharapova-84bc97653a7b49b73fcb4919fec16a31aff3b806-s800-c85.jpg
+|       |       sharapova-hits-the-practice-courts-and-met-ball-kids.jpg
+|       |       sharapova-power-4ea62a63cb076aed03d3972873cf2740cb4cd6a4-s1100-c15.jpg
+|       |       Sharapova_at_the_Mutua_Madrid_Open_2015.jpg
+|       |       skysports-maria-sharapova-tennis_4886283-1280x720-1.jpg
+|       |       TELEMMGLPICT000226075870_trans_NvBQzQNjv4BqP4pV-m6laGcMQMbuKYgJGTgvk-t9w27mDp57ATZVrwg.webp
+|       |       thumb-1920-37667.jpg
+|       |       unnamed (1).jpg
+|       |       unnamed (2).jpg
+|       |       unnamed.jpg
+|       |       wp1853660.jpg
+|       |       
+|       +---roger_federer
+|       |       03775a8e131301d9b53406c8f40fb10b.webp
+|       |       07548250.jpg
+|       |       106557207-1590765475629gettyimages-1202050340.jpeg
+|       |       1163381732-850x560.webp
+|       |       1256138.jpg
+|       |       1517538862724.jpg
+|       |       2012-07-08T174237Z_942697397_TB3E8781D6VJH_RTRMADP_3_TENNIS-WIMBLEDON.jpg
+|       |       20170429_Match_for_Africa_149.jpg
+|       |       20180816161600_139.jpg
+|       |       51f465e41dbadc549abdd64ba7ee166d.jpg
+|       |       55d4aba6a570417280c790d119c91ee7_18.jpg
+|       |       5c6becd02628985d2a2ee2a2.jfif
+|       |       643791-641790-roger-federer-aus-open-2018-afp.jpg
+|       |       833491-jzwrfgakxz-1491130217.jpg
+|       |       88m_ilrAGFA.jpg
+|       |       901027-715352-692111-661354-roger-federer-indian-wells-2018-afp-2.jpg
+|       |       AP20028208029153-770x433.webp
+|       |       becker-i-would-like-to-see-roger-federer-nadal-and-djokovic-being-beaten-.jpg
+|       |       bill-gates-playing-alongside-roger-federer-is-always-a-thrill.jpg
+|       |       ca717e520880bf40c28015a3d33395db.jfif
+|       |       derivative16X91578938868121.jpg
+|       |       download.jfif
+|       |       ed9602a9fb1ed29e817aa5cf91bd1fe7 (1).jpg
+|       |       ed9602a9fb1ed29e817aa5cf91bd1fe7.jpg
+|       |       ertas-roger-federer-search_rfederer_16tl_0569.webp
+|       |       federer-us-open-2019-press-conference.jpg
+|       |       Federer-US-Open-847483.jpg
+|       |       FEDERER-WIMBLEDON-08072019-18787.jpg
+|       |       federer-wimbledon.jpg
+|       |       federer-_660_073012091350.jpg
+|       |       federerkohli-770x433.webp
+|       |       FEDERER_16b9e25e144_large.jpg
+|       |       Federer_640 (1).jpg
+|       |       Federer_640.jpg
+|       |       federer_m.jpg
+|       |       gettyimages-1089315298 (1).jpg
+|       |       gettyimages-1089315298.jpg
+|       |       GettyImages-1151444330.jpg
+|       |       GettyImages-1161653186.jpg
+|       |       hi-res-c8bfe70f4d74e4c385df0c29578be1f0_crop_north-1-1600x1067.jpg
+|       |       how-roger-federer-rafael-nadal-and-novak-djokovic-changed-tennis-history-like-no-other.jpg
+|       |       maxresdefault.jpg
+|       |       NINTCHDBPICT000561000009-e1582196702724-1-1600x1412.jpg
+|       |       pr2rudso_roger-federer-afp_625x300_20_January_20.webp
+|       |       Roger-Federer (1).jpg
+|       |       Roger-Federer-2012.jpg
+|       |       Roger-Federer-2017-Wimbledon-trophy-PA.jpg
+|       |       roger-federer-answers-questions-during-a-press-conference-ahead-of-the-australian-open-2018-ap-1515940642.jpg
+|       |       Roger-Federer-Full-Press-conference-after-S-Finals-loss.jpg
+|       |       Roger-Federer-on-clay-PA-752x428.jpg
+|       |       roger-federer-s-daughters-myla-rose-and-charlene-riva-turn-9.jpg
+|       |       Roger-Federer-wife-Mirka-Federer-1009792-1280x720.jpg
+|       |       roger-federer-wimbledon.jpg
+|       |       roger-federer.jpg
+|       |       Roger-Federer.webp
+|       |       rogerfederer_perfect_82463094_646872489387563_6528719341074753867_n (1).jpg
+|       |       rogerfederer_perfect_82463094_646872489387563_6528719341074753867_n.jpg
+|       |       Roger_Federer_wikimedia_cc.jpg
+|       |       shPDTYko91c.jpg
+|       |       skysports-roger-federer-tennis_4762607-1600x900-1.jpg
+|       |       sp27-Roger-Federer.jpg
+|       |       
+|       +---serena_williams
+|       |       00-story-image-serena-and-alexis-wedding.jpg
+|       |       04-serena-williams-vogue-cover-february-2018.jpg
+|       |       082719-style-serena-williams-nike.jpg
+|       |       09Hunter1-superJumbo.jpg
+|       |       0ae47ed53dc47509d3f1d68b5a36a0c2.jpg
+|       |       104896644-GettyImages-823360.jpg
+|       |       14339074209247.jpg
+|       |       180529_gma_digital_serena_hpMain_16x9_992.jpg
+|       |       208ccd6a50433afc0f9e828f6ab4cc38.jpg
+|       |       4fee2e13ae7153bf53482c670383f987.jpg
+|       |       53cc1d13093f4ab989262e10a99d7e33.jpg
+|       |       577ff77cdd0895a01f8b4c75.jfif
+|       |       5e187cc2b2e66a44187ad008.jfif
+|       |       766c6664236f443c9c014cb2cbf9af7c_18.jpg
+|       |       a116634280a52f49d1882850332ea348.jpg
+|       |       ap_serena1.jpg
+|       |       Australian_Open_Tennis.JPG.jpg
+|       |       b47a15e872fd97677ece0952f97a952a.jpg
+|       |       beautiful-serena-williams-smile-face-hd-mobile-desktop-background-free-wallpaper.jpg
+|       |       c4fb97d5e53a45d5077691e738ad2559.jfif
+|       |       ca4f0064d6a8862fa90fa029b150f103.jpg
+|       |       dedeeb4268d54d1675933ff939740907.jpg
+|       |       download.jfif
+|       |       e2e24120-0e10-4f80-8305-8a471559729d-USP_Tennis__US_Open.jfif
+|       |       EJc7NAbXkAMVb7E.jpg
+|       |       EPA_Britain-Tennis-Wimbledon-2019-Grand-Slam_07708067jpg-JS504550178-1.jpg
+|       |       f_USTA1183921_20190903_USO_D9__DC27030.jpg
+|       |       GettyImages-1146432042.jpg
+|       |       GettyImages-2493795.jpg
+|       |       GettyImages-546039732.jpg
+|       |       iggy-azalea-serena-williams-that-grape-juice-2016-1191010.png
+|       |       image.jfif
+|       |       images (1).jfif
+|       |       images.jfif
+|       |       Marzorati-SerenaVenusToss.jpg
+|       |       Marzorati-Wimbledon-Williams-Murray.jpg
+|       |       merlin_157359645_df65b9ec-e01b-47a9-9b3a-efb7a73a7f37-superJumbo.jpg
+|       |       merlin_159085659_b310dac7-ae74-45b1-8dda-7b99897f32c9-superJumbo.jpg
+|       |       merlin_159161442_12e2102e-bd10-43d0-9b10-57d0dc248805-superJumbo.jpg
+|       |       Nike_2062_Serena_Vogue_7.19.18_M5_Square_native_1600.jpg
+|       |       nrm_1416399535-serena-berlei-2.jpg
+|       |       NTC_Core_Power_Workout_with_Serena_Williams_1_hd_1600.jpg
+|       |       phyeer11c02qbwe.jpg
+|       |       pri_69579085-e1518865160694.jpg
+|       |       rs_634x1024-171117181513-634.serena-williams-alexis-ohanian-wedding.ct.111717.jpg
+|       |       s110172820.jpg
+|       |       Screen-Shot-2020-02-16-at-1.02.12-PM-620x400.png
+|       |       Screenshot 2019-11-27 at 06.13.56.png
+|       |       serena-alexis_720-1.jpg
+|       |       serena-usa-m.jpg
+|       |       serena-venus-williams-redcarpet-gty-ps-181116_hpMain_16x9t_1600.jpg
+|       |       serena-williams-01-ss-jc-190709_hpMain_16x9_992.jpg
+|       |       serena-williams-alexis-ohanian-feat.jpg
+|       |       serena-williams-competition.jpg
+|       |       serena-williams-glamour-july-2016-cover-1.jpg
+|       |       serena-williams-glamour-july-2016-cover-4-social.jpg
+|       |       Serena-Williams-t.jpg
+|       |       serena-williams-unlimited-greatness.jpg
+|       |       Serena-Williams-Writes-a-Beautiful-Letter-to-Her-Mom.jpg
+|       |       serena-williams1.jpg
+|       |       serena_headshot.jpeg
+|       |       Serena_Williams_BNP_Paribas_Showdown_April_6_2013.jpg
+|       |       Teenager-Bianca-Andreescu-makes-Rogers-Cup-final9.jpg
+|       |       TELEMMGLPICT000208363706_trans++MG9jYnib85FJIfCc-bQYcTFCz-CXoLiAuLtBSY0KYYg.jpeg
+|       |       tennis-frenchopen-.jpg
+|       |       tmp_iILGT7_2f290cf6f8496dc0_GettyImages-676049730.jpg
+|       |       uUa6x3eXf3__zFaIfjkC0QysTGUwuhWOWoYEAUTunGv70HZ-UXA62U0sGCPucHm4pqxqPQWinZiXVNLmZFcZ6RF9aL8cZ5_kZGD0kziwbD16kWk1WWK5e39OyAPwaHjIzGqtAshq-1920x1080.png
+|       |       Williams-SerenaKN.jpg
+|       |       Ww0U1Zx8goxpttaQvkrk.jpg
+|       |       
+|       \---virat_kohli
+|               02fa06cf94.jpg
+|               05b9bac90a.jpg
+|               088db66e0b.jpg
+|               0b43460429.jpg
+|               0b53cce8c6.jpg
+|               0eb2230fbf.jpg
+|               1146943f73.jpg
+|               132a62a742.jpg
+|               150fc612d2.jpg
+|               1fee075645.jpg
+|               2018439965.jpg
+|               266f9eacf3.jpg
+|               27ad99a806.jpg
+|               28e155755b.jpg
+|               2c06edccfb.jpg
+|               357f957b72.jpg
+|               37d3f53e84.jpg
+|               3846bffc28.jpg
+|               39c2bd6fc9.jpg
+|               39e1dd840f.jpg
+|               3e6d62bc8e.jpg
+|               3f5fd4fead.jpg
+|               41de91b30f.jpg
+|               47f53ee402.jpg
+|               49f7355f97.jpg
+|               4cbef36ff6.jpg
+|               5181ba2b71.jpg
+|               52345a338c.jpg
+|               549e5c755e.jpg
+|               55620911db.jpg
+|               59a89ee258.jpg
+|               5a3384f779.jpg
+|               5e51e39db9.jpg
+|               631e46db26.jpg
+|               632b7bb5ea.jpg
+|               644558382a.jpg
+|               688be3f972.jpg
+|               6a1a57040d.jpg
+|               6adbc1218c.jpg
+|               6ca67cbf33.jpg
+|               6fb5b64053.jpg
+|               71ed3d75ae.jpg
+|               76a06a6ec1.jpg
+|               7953108375.jpg
+|               7e224dbc5c.jpg
+|               7fde5779f6.jpg
+|               80b6d56dca.jpg
+|               83cf04fd82.jpg
+|               83f9de72c1.jpg
+|               84b8ff940f.jpg
+|               84d7142d38.jpg
+|               85420dacb0.jpg
+|               877f7e3ca1.jpg
+|               8816565b00.jpg
+|               90217af76e.jpg
+|               924c3e8a40.jpg
+|               9411cc8728.jpg
+|               95f4fc9fdd.jpg
+|               97f960062f.jpg
+|               9a7668efc5.jpg
+|               9bb09002ef.jpg
+|               9c2340c897.jpg
+|               9c64bc0211.jpg
+|               9e308996ca.jpg
+|               9e30af3e8d.jpg
+|               a18f264208.jpg
+|               a410364f02.jpg
+|               a45a1e7929.jpg
+|               a76fdd6705.jpg
+|               aa9aff20c8.jpg
+|               aacdbc91c5.jpg
+|               b1b30289cc.jpg
+|               b24633ff69.jpg
+|               b2f20fd674.jpg
+|               b66da3c9c7.jpg
+|               b79492fc98.jpg
+|               bb41267a29.jpg
+|               bb99a735bd.jpg
+|               bf7a379edb.jpg
+|               c008190c48.jpg
+|               ca4ace6ffd.jpg
+|               cae47439c4.jpg
+|               cbb752d148.jpg
+|               ce8509c4a3.jpg
+|               d0dbbb10a1.jpg
+|               d3b3c15c31.jpg
+|               d926a8b18d.jpg
+|               da99f49cfd.jpg
+|               db14c38dcd.jpg
+|               dec07e4775.jpg
+|               e158b6a853.jpg
+|               e309859808.jpg
+|               e5de3a7e94.jpg
+|               ea43ba6899.jpg
+|               ee9b8b6b6b.jpg
+|               eede89a24b.jpg
+|               f4f9df9fcc.jpg
+|               f5fc8953ab.jpg
+|               f70491a4c2.jpg
+|               f8d44f8840.jpg
+|               fa92cc3cd5.jpg
+|               fc47090678.jpg
+|               fc75b07003.jpg
+|               kohli1.jpg
+|               
++---haarcascade
+|       haarcascade_eye.xml
+|       haarcascade_frontalface_default.xml
+|       
++---output
+|       class_dictionary.pkl
+|       confusion_matrix.png
+|       features_labels.pkl
+|       final_model.pkl
+|       
++---src
+|       clean_images.py
+|       feature_extraction.py
+|       predict.py
+|       prepare_data.py
+|       train_model.py
+|       
+\---static
+    \---uploads
+            024d1a5ec0d3403fb08b41d1aac995c6_download.jfif
+            02e45b97a0de48dca14c3097cbcf15fe_serena_williams.jpg
+            046cd3179e1942cd8d28429c76439f18_serena_williams.jpg
+            06ee3533b72848e2a05dc8de459b1bca_0b43460429.jpg
+            08d4aad8707c435e9d2740c8b16ead83_roger_federer.jpg
+            0e61878a669c4bf8a9e5d0348bfd61a1_virat.jpg.jpg
+            0fd5d7939fe84a33a81e7e7dd73ac0d9_virat.jpg.jpg
+            11402e6085e641a4b3a0712fe89f8718_lionel_messi.png
+            130d46b190d14d9cbb4801252de15593_maria_sharapova.jpg
+            1cde7c9774144bb59c90d229c21bdbb8_lionel_messi.png
+            2040702255e347489e813fe2e7912d26_ed9602a9fb1ed29e817aa5cf91bd1fe7_1.jpg
+            2826719259fc4dc4a1cc8e64f5e76f4e_virat_kohli.jpg
+            298ca8bd939c40c19bf5199dfcdee82e_lionel_messi.png
+            2cc4ac6a57f04218a2dd216338e530be_Screenshot_2024-06-28_201353.png
+            2e9ec3fda35b4f9c8ff1acfe56eb48ac_serena_williams.jpg
+            312f623c18aa4ea2b5072746076f6249_maria_sharapova.jpg
+            313c020a756d42e28c3596d1ff50b022_virat.jpg.jpg
+            323ddd3f87d84ae5af6764b3973bc5fc_federer_m.jpg
+            3356a62135e746a390b29ccc541f56d2_virat_kohli.jpg
+            366435d0d4d643b3913eb99ee7ae5121_lionel_messi.png
+            37bc9d3f7c1d4cda91e33876e65fa231_76a06a6ec1.jpg
+            3fdf8cc09c7440b18ad2eba286cb1e35_9e30af3e8d.jpg
+            45eb3a8e727a4916b63610ef8b2f646c_0b43460429.jpg
+            4964ab932499461ea697b7c4a78b5c70_roger_federer.jpg
+            49863b2eabb84c90a52293a95d0289cc_9bb09002ef.jpg
+            4a12f5c6440c40438d3b7bbae965a0a5_aa9aff20c8.jpg
+            4e4b539ad89e4fe994e320fad2d3b914_maria_sharapova.jpg
+            5607c40c924b4f77a37aaf9afa1e16fa_virat.jpg.jpg
+            65dbca13644240839eea08f1529f7ebc_lionel_messi.png
+            66344be1dbdc41efbad600e1d2244686_maria_sharapova.jpg
+            6964e2a8914349a59dea4ac11efccda1_maria_sharapova.jpg
+            6d8e3548ec984bfb83f628db39854bfc_serena_williams.jpg
+            792182ae89b34e34a60cc6066f67dd29_lionel_messi.png
+            79a4066f28a64e8f8da0465bee2d738f_virat.jpg.jpg
+            7c66c73583ff448785c1b61eee8b8542_lionel_messi.png
+            7f385ef5e7fd4457a3805daf53247ae8_phyeer11c02qbwe.jpg
+            7f4d6d9de3c140009ad4e5b33d16b8ed_roger_federer.jpg
+            866a6929c12f4b21827a46cbc31dda8e_Williams-SerenaKN.jpg
+            8829d668038b466d8ddee197727c5f4e_serena_williams.jpg
+            8a5654c664ca4b73a4c864d6417cbcd6_09Hunter1-superJumbo.jpg
+            8b0538b0219b4879961639b4aa84ddf1_serena_williams.jpg
+            8bb24c8f5e92492f903f1b5fc4739777_virAT.jpg
+            8f5e3d64b1164ad5a4f32c225d05008d_virat.jpg.jpg
+            93174b3591d5460d87247e39b85241b3_virAT.jpg
+            95ca4b2a95b449efa4462036bedb5c3b_virat_kohli.jpg
+            97fc1bea7a8546ada962c8155525ba3a_virat_kohli.jpg
+            980421686a17430899390432f00562ec_virat_kohli.jpg
+            9988bb82b0f445b689a1ac6c7de2683b_lionel_messi.png
+            9c6fa705c9cb461188f58002b6e75694_9bb09002ef.jpg
+            9e405d33a86b4923ba4c7b9423c5e315_Screenshot_2024-06-28_201044.png
+            a2c1da4a3c8949b1b843c37acad1af42_virat_kohli.jpg
+            a438700c56604446881c7942f6c4b8b0_roger_federer.jpg
+            a71bdfdb68c242468dfc05923b5072fa_lionel_messi.png
+            aa7d853b65694e53bde7f2b40a442b57_lionel_messi.png
+            ab480159267c49218786815bc5e5ea20_virat_kohli.jpg
+            b3f420c558c14932a20c99ade4ed09b3_lionel_messi.png
+            babbba64defe43e08486dd61f6d13504_GettyImages-1151444330.jpg
+            c17f6d0bd871471e89bec41673ca860a_virat.jpg.jpg
+            c3a59f91a1de4ad1b2389c85dfabdd1a_9e30af3e8d.jpg
+            cbc4cc3d0b1a4c5e9c00489ff7b86dc7_lionel_messi.png
+            cc5398dfe09b4e3daf756b1f9965b766_28003-1510231943.jpg
+            ceb0f071ac75488ea14abaf882aba93d_download.jfif
+            cee5a143df434a33b57124ba37d3da77_virat_kohli.jpg
+            cefab5d9277749b091414e5c704ddc1e_virAT.avif
+            cf5957a057944c07abe31d7d729da4a8_roger_federer.jpg
+            d18d8479a8a14960a527fc9598523518_virAT.avif
+            d36017e7d76d4ea38d2bad54f5c7622f_image_1_2.jpg
+            d4b316d2d205400abb2c8a1ccf349a6e_virat_kohli.jpg
+            d74cc5b5f6f64eba90bda3cd4e3bd335_lionel_messi.png
+            d9b771a408b440658cb2616f03f1de01_maria_sharapova.jpg
+            deb5f023501f445299db11d34e1c020f_roger_federer.jpg
+            e0e975ccf77345f18a5ca968dd078da3_virat_kohli.jpg
+            e0ec6285d5324c3bb29127c6c3e2e3a1_maria_sharapova.jpg
+            e17a6ebfc8654bf38b1956cac5da5fec_serena_williams.jpg
+            eebc94053fc34edf8037821c2160be65_roger_federer.jpg
+            f9393dd129094ba4a479d3ff2fba0246_roger_federer.jpg
+            f9d2ed451ea74ec6a4ff8a8b9bd59553_virat_kohli.jpg
+            fb69a3aef5d246e29b66f5f9a41bfce9_virat.jpg.jpg
+            
