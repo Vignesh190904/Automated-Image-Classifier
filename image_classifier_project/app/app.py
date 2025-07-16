@@ -8,7 +8,7 @@ import os
 app = Flask(__name__)
 
 # Paths
-BASE_PATH = BASE_PATH = os.path.dirname(os.path.dirname(__file__))
+BASE_PATH = os.path.abspath(os.path.dirname(__file__))
 CASCADE_PATH = os.path.join(BASE_PATH, 'opencv', 'haarcascades')
 HAAR_DIR = os.path.join(BASE_PATH, 'haarcascade')
 
@@ -31,7 +31,7 @@ def get_cropped_face_if_valid(img):
     faces = face_cascade.detectMultiScale(gray, 1.3, 5)
     if len(faces) == 0:
         # Fallback to profile
-        faces = profile_face_cascade.detectMultiScale(gray, 1.3, 5)
+        faces = profile_cascade.detectMultiScale(gray, 1.3, 5)
 
     for (x, y, w, h) in faces:
         roi_gray = gray[y:y + h, x:x + w]
