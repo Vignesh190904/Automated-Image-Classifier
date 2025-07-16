@@ -1,10 +1,10 @@
 flask
+gunicorn
 opencv-python-headless
-pywavelets
+joblib
 numpy
 scikit-learn
+pywavelets
+werkzeug
 matplotlib
 seaborn
-joblib
-werkzeug
-gunicorn
