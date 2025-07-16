@@ -8,19 +8,25 @@ import pathlib
 
 app = Flask(__name__)
 
+# Project base path (e.g., /opt/render/project/src/)
 BASE_PATH = pathlib.Path(__file__).resolve().parent.parent
-HAAR_DIR = os.path.join(BASE_PATH, 'haarcascade')
 
-model = joblib.load(BASE_PATH / 'output' / 'final_model.pkl')
-class_dict = joblib.load(BASE_PATH / 'output' / 'class_dictionary.pkl')
+# Correct relative paths to model and haarcascade folders
+MODEL_PATH = BASE_PATH / 'output' / 'final_model.pkl'
+DICT_PATH = BASE_PATH / 'output' / 'class_dictionary.pkl'
+HAAR_DIR = BASE_PATH / 'haarcascade'
+
+# Load model and class dictionary
+model = joblib.load(MODEL_PATH)
+class_dict = joblib.load(DICT_PATH)
 inv_class_dict = {v: k for k, v in class_dict.items()}
 
 # Load Haar cascades
-face_cascade = cv2.CascadeClassifier(os.path.join(HAAR_DIR, 'haarcascade_frontalface_default.xml'))
-eye_cascade = cv2.CascadeClassifier(os.path.join(HAAR_DIR, 'haarcascade_eye.xml'))
-profile_cascade = cv2.CascadeClassifier(os.path.join(HAAR_DIR, 'haarcascade_profileface.xml'))
-nose_cascade = cv2.CascadeClassifier(os.path.join(HAAR_DIR, 'haarcascade_mcs_nose.xml'))
-mouth_cascade = cv2.CascadeClassifier(os.path.join(HAAR_DIR, 'haarcascade_mcs_mouth.xml'))
+face_cascade = cv2.CascadeClassifier(str(HAAR_DIR / 'haarcascade_frontalface_default.xml'))
+eye_cascade = cv2.CascadeClassifier(str(HAAR_DIR / 'haarcascade_eye.xml'))
+profile_cascade = cv2.CascadeClassifier(str(HAAR_DIR / 'haarcascade_profileface.xml'))
+nose_cascade = cv2.CascadeClassifier(str(HAAR_DIR / 'haarcascade_mcs_nose.xml'))
+mouth_cascade = cv2.CascadeClassifier(str(HAAR_DIR / 'haarcascade_mcs_mouth.xml'))
 
 def get_cropped_face_if_valid(img):
     gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
@@ -28,7 +34,7 @@ def get_cropped_face_if_valid(img):
     # Try frontal face first
     faces = face_cascade.detectMultiScale(gray, 1.3, 5)
     if len(faces) == 0:
-        # Fallback to profile
+        # Fallback to profile face
         faces = profile_cascade.detectMultiScale(gray, 1.3, 5)
 
     for (x, y, w, h) in faces:
@@ -89,9 +95,8 @@ def predict():
     prediction = model.predict([features])[0]
     proba = model.predict_proba([features])[0]
     predicted_class = inv_class_dict[prediction]
-    confidence = proba[prediction]  # get confidence of top class
+    confidence = proba[prediction]
 
-    # Apply confidence threshold (e.g., 0.9 for 90%)
     if confidence < 0.80:
         return jsonify({
             'status': 'fail',
@@ -101,7 +106,7 @@ def predict():
     result = {
         'status': 'success',
         'predicted_class': predicted_class,
-        'class_probabilities': {inv_class_dict[i]: prob for i, prob in enumerate(proba)}
+        'class_probabilities': {inv_class_dict[i]: float(prob) for i, prob in enumerate(proba)}
     }
 
     return jsonify(result)
