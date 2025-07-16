@@ -1,20 +1,9 @@
-# Ignore Python virtual environments
-venv/
-
-# Byte-compiled / cache
 __pycache__/
-*.py[cod]
-
-# Jupyter Notebook checkpoints
-.ipynb_checkpoints/
-
-# VS Code settings
-.vscode/
-
-# Environment files
+*.pyc
 .env
-*.env
-
-# macOS/Linux/Windows system files
+*.h5
+*.pkl
+*.tar
 .DS_Store
-Thumbs.db
+*.ipynb
+venv/
