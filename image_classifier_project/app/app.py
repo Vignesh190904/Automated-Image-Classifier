@@ -4,17 +4,16 @@ import cv2
 import numpy as np
 import pywt
 import os
+import pathlib
 
 app = Flask(__name__)
 
-# Paths
-BASE_PATH = os.path.abspath(os.path.dirname(__file__))
+BASE_PATH = pathlib.Path(__file__).resolve().parent.parent
 CASCADE_PATH = os.path.join(BASE_PATH, 'opencv', 'haarcascades')
 HAAR_DIR = os.path.join(BASE_PATH, 'haarcascade')
 
-# Load trained model and class dictionary
-model = joblib.load(os.path.join(BASE_PATH, 'output/final_model.pkl'))
-class_dict = joblib.load(os.path.join(BASE_PATH, 'output/class_dictionary.pkl'))
+model = joblib.load(BASE_PATH / 'output' / 'final_model.pkl')
+class_dict = joblib.load(BASE_PATH / 'output' / 'class_dictionary.pkl')
 inv_class_dict = {v: k for k, v in class_dict.items()}
 
 # Load Haar cascades
