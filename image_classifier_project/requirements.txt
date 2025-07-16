@@ -1,9 +1,10 @@
-sopencv-python
+flask
+opencv-python-headless
 pywavelets
 numpy
 scikit-learn
 matplotlib
 seaborn
-flask
 joblib
 werkzeug
+gunicorn
