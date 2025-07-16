@@ -9,7 +9,6 @@ import pathlib
 app = Flask(__name__)
 
 BASE_PATH = pathlib.Path(__file__).resolve().parent.parent
-CASCADE_PATH = os.path.join(BASE_PATH, 'opencv', 'haarcascades')
 HAAR_DIR = os.path.join(BASE_PATH, 'haarcascade')
 
 model = joblib.load(BASE_PATH / 'output' / 'final_model.pkl')
